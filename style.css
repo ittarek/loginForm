@@ -3,10 +3,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-body {
+* {
   font-family: "Poppins", sans-serif;
-  background: url('bgc3.jpg') no-repeat;
-  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  background: url("bgc3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
 
 }
 .wrapper {
@@ -22,6 +30,12 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+.wrapper img {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .wrapper .icon-close {
   position: absolute;
@@ -81,7 +95,7 @@ body {
   border: none;
   outline: none;
   font-size: 1em;
-  color: #162938;
+  color: #fff;
   font-size: 600;
   padding: 0 35px 0 5px;
 }
@@ -95,22 +109,23 @@ body {
 .remember-forgat {
   font-size: 0.9em;
 
-  color: #162938;
+  color: #fff;
   font-weight: 500;
   margin: -15px 0 15px;
   display: flex;
   justify-content: space-between;
 }
 .remember-forgat label input {
-  accent-color: #162938;
+  accent-color: #fff;
   margin-right: 3px;
 }
 .remember-forgat a {
-  color: #162938;
+  color: #d6dbc7;
   text-decoration: none;
 }
 .remember-forgat a:hover {
   text-decoration: underline;
+  color: red;
 }
 .btn {
   width: 100%;
@@ -126,13 +141,13 @@ body {
 }
 .login-register {
   font-size: 0.9em;
-  color: #162938;
+  color: #fff;
   text-align: center;
   font-weight: 500;
   margin: 25px 0 10px;
 }
 .login-register p a {
-  color: #162938;
+  color: #399386;
   text-decoration: none;
   font-weight: 600;
 }
